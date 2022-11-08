@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html" class="title">fixxo.</a>
+        </div>
+        <div class="nav-menu">
+          <div
+            class="hamburger-icon close-icon text-center"
+            id="hamburger-icon-close"
+          >
+            <i class="fa fa-close"></i>
+          </div>
+          <ul>
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="#">categories</a>
+            </li>
+            <li>
+              <a href="#">products</a>
+            </li>
+            <li>
+              <a href="contact-us.html">contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-search"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-retweet"></i>
+                <span class="number">1</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-regular fa-heart"></i>
+                <span class="number">2</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-bag-shopping"></i>
+                <span class="number">4</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="hamburger-icon open-icon text-center"
+          id="hamburger-icon-open"
+        >
+          <i class="fa fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Contact Section -->
+    <section class="contact-us py-4">
+      <div class="title py-2">
+        <h3 class="text-center text-capitalize">contact us</h3>
+      </div>
+      <div class="map mb-3">
+        <img src="images/map2.svg" class="w-100" alt="" />
+      </div>
+      <div class="contact-form">
+        <div class="container">
+        <div class="form-title">
+            <h4 class="text-capitalize mt-5 mb-4">come in contact with us</h4>
+        </div>
+            <form novalidate action="#" method="POST" onsubmit="submitForm(event)">
+          <div class="row gap-3 gap-sm-0">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Your Name"
+                    id="name"
+                    onkeyup="validate(event)"
+                  />
+                  <span class="error-message" id="nameErrorMessage"></span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Your Email"
+                    id="email"
+                    onkeyup="validate(event)"
+                  />
+                  <span class="error-message" id="emailErrorMessage"></span>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group">
+                    <textarea class="form-control" id="comment" onkeyup="validate(event)"  class="comments" cols="30" rows="6" placeholder="Comments"></textarea>
+                    <span class="error-message" id="commentErrorMessage"></span>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <button class="btn-post-comment text-capitalize text-white border-0 py-2 px-4 mt-4">post comment</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Start Footer -->
+    <footer class="text-center py-5">
+      <div class="social-icons mb-2">
+        <ul class="d-flex justify-content-center align-items-center gap-3">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-google"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p class="text-capitalize m-0">&copy; 2022 Fixxo. all right reserved</p>
+      </div>
+
+      <div
+        id="scroll-to-top"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <i class="fa-solid fa-location-arrow"></i>
+      </div>
+    </footer>
+    <!-- End Navbar -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
